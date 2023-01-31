@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+.dark{
+    --backgroundcolor: #151515;
+    --foregroundcolor: #242424;
+    --underlinecolor: #4ee29f;
+    --textcolor: white;
+    --label: #818181;
+    --msgboxfontcolor: white;
+    --bordercolor: white;
+}
+
+.light{
+    --backgroundcolor: white;
+    --foregroundcolor: lightgrey;
+    --underlinecolor: #4ee29f;
+    --textcolor: black;
+    --label: #818181;
+    --msgboxfontcolor: black;
+    --bordercolor: black;
+}
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+    align-content: center;
+    background-color: var(--backgroundcolor);
+    position: relative;
+    z-index: 0;
+}
+
+.big-wrapper{
+    background-color: transparent;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+.logo{
+    margin-left: 2rem;
+    color: var(--textcolor);
+    cursor: pointer;
+}
+
+.no-style-list{
+    margin-top: 2rem;
+    margin-right: 5rem;
+    list-style: none;
+    display: flex;
+    color: var(--textcolor);
+    font-size: 20px;
+}
+
+.no-style-list li{
+    margin-left: 2rem;
+}
+
+.no-style-list i{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.no-style-list i:hover{
+    font-size: 23px;
+}
+
+.showcase{
+    margin-top: -6rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    top: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.profile{
+    margin-top: 100px;
+}
+
+.profile h1{
+    font-size: 80px;
+    color: var(--textcolor);
+    line-height: 0px;
+}
+
+.profile p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    font-size: 21px;
+    color: var(--textcolor);
+}
+
+.profile h5{
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--textcolor);
+    text-decoration: solid 2px underline var(--underlinecolor);
+    text-underline-offset: 10px;
+}
+
+.person{
+    background-color: var(--foregroundcolor);
+    margin-right: 3rem;
+}
+
+.underline{
+    text-decoration: solid 4px underline var(--underlinecolor);
+    text-underline-offset: 10px;
+}
+
+.languages{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: var(--textcolor);
+    row-gap: 4rem;
+}
+
+.languages h1{
+    line-height: 4px;
+    font-size: 3.5rem;
+}
+
+.project-header{
+    margin-top: 5rem;
+}
+
+.project-heading{
+    font-size: 3rem;
+    color: var(--textcolor);
+}
+
+.contact-me{
+    cursor: pointer;
+    margin-right: 3rem;
+    font-size: 20px;
+    color: var(--textcolor);
+    text-decoration: solid 2px underline var(--underlinecolor);
+    text-underline-offset: 10px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 4rem;
+    margin-left: 2rem;
+}
+
+.project-container img{
+    width: 90%;
+}
+
+.project-container h2{
+    color: var(--textcolor);
+    margin-bottom: 0;
+}
+
+.project-container p{
+    tab-size: 4;
+    color: var(--textcolor);
+    margin-bottom: 100px;
+}
+
+.bottom-area{
+    background-color: var(--foregroundcolor);
+    width: 100%;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--textcolor);
+}
+
+.footer{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footer h1{
+    line-height: 2px;
+    font-size: 80px;
+}
+
+.footer p{
+    width: 75%;
+    font-size: 20px;
+}
+
+input{
+    color: var(--msgboxfontcolor);
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 4rem;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid white;
+    border-bottom-color: var(--bordercolor);
+}
+
+textarea{
+    resize: none;
+    color: var(--msgboxfontcolor);
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 2rem;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid white;
+    border-bottom-color: var(--bordercolor);
+}
+
+.input-area div{
+    margin-top: 2rem;
+}
+
+.send-msg-btn{
+    cursor: pointer;
+    display: flex;
+    direction: rtl;
+    margin-right: 7.5rem;
+    text-decoration: solid 2px underline var(--underlinecolor);
+    text-underline-offset: 10px;
+}
+
+.summary{
+    margin-top: 5rem;
+}
+.input-area{
+    margin-top: 5rem;
+}
+
+.light .no-style-list li:last-child{
+    display: block;
+}
+
+.light .no-style-list li:nth-last-child(2){
+    display: none;
+}
+
+.dark .no-style-list li:last-child{
+    display: none;
+}
+
+.dark .no-style-list li:nth-last-child(2){
+    display: block;
+}
+
+.copy {
+    position: fixed;
+    margin: 0 auto;
+    z-index: 100;
+}
