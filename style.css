@@ -36,6 +36,8 @@ body{
 
 .header{
     background-color: transparent;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     z-index: 2;
 }
@@ -175,6 +177,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: var(--textcolor);
+    margin-left: 2rem;
 }
 
 .footer{
@@ -255,4 +258,501 @@ textarea{
     position: fixed;
     margin: 0 auto;
     z-index: 100;
+}
+
+@media screen and (max-width: 1075px) and (min-width: 1001px){
+    .profile h1{
+        font-size: 60px;
+        color: var(--textcolor);
+        line-height: 0px; 
+        display: inline;  
+    }
+    .profile p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        font-size: 15px;
+        color: var(--textcolor);
+    }
+    .languages{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: var(--textcolor);
+        row-gap: 4rem;
+        margin-left: 5rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary p{
+        text-align: center;
+    }
+    input{
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 4rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    textarea{
+        resize: none;
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 2rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    .send-msg-btn{
+        cursor: pointer;
+        display: flex;
+        direction: rtl;
+        margin-right: 0;
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 941px){
+    .big-wrapper{
+        background-color: transparent;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .profile h1{
+    font-size: 60px;
+    color: var(--textcolor);
+    line-height: 0px; 
+    display: inline;  
+    }      
+    .profile p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        font-size: 15px;
+        color: var(--textcolor);
+    }
+    .languages{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: var(--textcolor);
+        row-gap: 4rem;
+        margin-left: 5rem;
+    }
+    .project-heading{
+        font-size: 2rem;
+        color: var(--textcolor);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary p{
+        text-align: center;
+    }
+    input{
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 4rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    textarea{
+        resize: none;
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 2rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    .send-msg-btn{
+        cursor: pointer;
+        display: flex;
+        direction: rtl;
+        margin-right: 0;
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }
+}
+
+@media screen and (max-width: 940px) and (min-width: 791px){
+    .big-wrapper{
+        background-color: transparent;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .profile h1{
+    font-size: 40px;
+    color: var(--textcolor);
+    line-height: 0px; 
+    display: inline;  
+    }      
+    .profile p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        font-size: 13px;
+        color: var(--textcolor);
+    }   
+    .profile h5{
+        cursor: pointer;
+        font-size: 15px;
+        color: var(--textcolor);
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }
+    .languages{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: var(--textcolor);
+        row-gap: 4rem;
+        margin-left: 5rem;
+    }
+    .project-heading{
+        font-size: 2rem;
+        color: var(--textcolor);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary p{
+        text-align: center;
+    }
+    input{
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 4rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    textarea{
+        resize: none;
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 2rem;
+        width: 40rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    .send-msg-btn{
+        cursor: pointer;
+        display: flex;
+        direction: rtl;
+        margin-right: 0;
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }        
+}
+
+@media screen and (max-width: 790px) and (min-width: 683px){
+    .big-wrapper{
+        background-color: transparent;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .profile h1{
+    font-size: 25px;
+    color: var(--textcolor);
+    line-height: 0px; 
+    display: inline;  
+    }      
+    .profile p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        font-size: 10px;
+        color: var(--textcolor);
+    }   
+    .profile h5{
+        cursor: pointer;
+        font-size: 12px;
+        color: var(--textcolor);
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }
+    .languages{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: var(--textcolor);
+        row-gap: 4rem;
+        margin-left: 5rem;
+    }
+    .languages h1{
+        line-height: 4px;
+        font-size: 2.5rem;
+    }
+    .project-heading{
+        font-size: 1.5rem;
+        color: var(--textcolor);
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 4rem;
+        margin-left: 2rem;
+    }
+    
+    .project-container img{
+        width: 80%;
+    }
+    
+    .project-container h2{
+        color: var(--textcolor);
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    
+    .project-container p{
+        tab-size: 4;
+        color: var(--textcolor);
+        margin-bottom: 100px;
+    }    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary p{
+        text-align: center;
+    }
+    input{
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 4rem;
+        width: 30rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    textarea{
+        resize: none;
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 2rem;
+        width: 30rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    .send-msg-btn{
+        cursor: pointer;
+        display: flex;
+        direction: rtl;
+        margin-right: 0;
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }        
+}
+
+@media screen and (max-width: 682px){
+    .big-wrapper{
+        background-color: transparent;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .header{
+        background-color: transparent;
+        display: inline;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .logo{
+        margin: 0;
+        margin-top: 1rem;
+        justify-content: center;
+        display: flex;
+        color: var(--textcolor);
+        cursor: pointer;
+    }
+    .header h1{
+        margin: 0;
+    }
+    .no-style-list{
+        margin: 0;
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        color: var(--textcolor);
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .showcase{
+        top: 0;
+        position: relative;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile{
+        margin-top: 150px;
+        align-items: center;
+    }
+    .person{
+        background-color: var(--foregroundcolor);
+    }
+    .profile h1{
+    font-size: 25px;
+    color: var(--textcolor);
+    line-height: 0px; 
+    display: inline;  
+    }      
+    .profile p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 50%;
+        font-size: 10px;
+        color: var(--textcolor);
+    }   
+    .profile h5{
+        cursor: pointer;
+        font-size: 12px;
+        color: var(--textcolor);
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    }
+    .languages{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: var(--textcolor);
+        row-gap: 4rem;
+        text-align: center;
+    }
+    .languages h1{
+        line-height: 4px;
+        font-size: 2.5rem;
+    }
+    .project-heading{
+        font-size: 1.5rem;
+        color: var(--textcolor);
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+        text-align: center;
+    }
+    
+    .project-container img{
+        width: 80%;
+    }
+    
+    .project-container h2{
+        color: var(--textcolor);
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    
+    .project-container p{
+        tab-size: 4;
+        color: var(--textcolor);
+        margin-bottom: 100px;
+    }    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary p{
+        text-align: center;
+    }
+    input{
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 4rem;
+        width: 18rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    textarea{
+        resize: none;
+        color: var(--msgboxfontcolor);
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 2rem;
+        width: 18rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-bottom-color: var(--bordercolor);
+    }
+    .send-msg-btn{
+        cursor: pointer;
+        display: flex;
+        direction: rtl;
+        margin-right: 0;
+        text-decoration: solid 2px underline var(--underlinecolor);
+        text-underline-offset: 10px;
+    } 
 }
